@@ -1,0 +1,46 @@
+/*Element selector*/
+body{
+    background-color: beige;
+}
+/* Class */
+.di {
+    color: rgb(244, 51, 12);
+}
+/* Id */
+#paragraph {
+    color: blue;
+}
+/* Pseudo*/
+.di::first-line {
+    color: yellow;
+}
+/* Descendant*/
+p kbd {
+    color: aqua;
+}
+/*OR*/
+p > i{
+    color: blueviolet;
+} 
+/* sibling*/
+p + kbd{
+    color: aquamarine;
+}
+/* Media Query*/
+
+.box{
+width: 200px;
+height: 200px;
+background-color: pink;
+margin: 16px;
+}
+@media screen and (max-width: 756px) {
+    .box {
+        background-color: gold;
+    }
+}
+@media screen and (max-width: 356px) {
+    .box {
+        background-color: blue;
+    }
+}
